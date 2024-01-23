@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#root{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.masterContainer{
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    text-align: center; 
+    height: auto;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 3rem;
+    background-color: white;
+}
+
+.container-for-request-form {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    background: white;
+    margin-top: 40px;
+}
+
+.request-form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.form-styling {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: whitesmoke;
+    font-size: 16px;
+}
+
+.form-submit {
+    padding: 15px;
+    background: #ff5361;
+    color: whitesmoke;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+.margin-bottom {
+    font-weight: 800px;
+
+}
+
+.site-title {
+    font-size: 2rem;
+}
+
+.nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+    z-index: 100;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    z-index: 10;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+
+.nav li.active {
+    background-color: #555;
+}
+
+.nav li:hover {
+    background-color: #777;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #333;
+    color: white;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.right-footer {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+}
+
+.left-footer {
+    font-size: 2rem;
+    padding: 0px 10px;
+}
+
+#orange span {
+    background-color: orange;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    background-color: #777;
+    color: white;
+}
+
+.banner {
+    content: "";
+    background-image: url("img/university-of-victoria.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* position: absolute; */
+    margin: 0;
+    /* top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px; */
+    opacity: 0.70;
+}
+
+main {
+    margin: 0;
+    position: relative;
+    top: 100px;
+}
+
+main h3 {
+    font-size: 4rem;
+}
+
+span {
+    color: #00008B;
+    font-weight: 700;
+}
+
+.line {
+    border: 3px solid #00008B;
+    width: 700px;
+    margin: 30px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+main li {
+    color: #333;
+    font-size: 2rem;
+    position: relative;
+    list-style: none;
+    border: 2px solid rgb(68, 68, 68);
+    border-radius: 10px;
+    background-color: #777;
+    color: white;
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 5px;
+}
+
+main li:hover {
+    background-color: rgb(196, 196, 196);
+}
+
+.square-xl {
+    width: 200px !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    height: 100px !important;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.square-xxl {
+    width: 640px !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    height: 100px !important;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    font-size: 22px;
+}
+
+.item1 { 
+    grid-area: header; 
+    background-image: url("img/university-of-victoria.jpg");
+}
+.item2 { 
+    grid-area: tourism; 
+}
+
+.item3 ul{
+    list-style-type: none;
+}
+
+.item3 { 
+    grid-area: housing; }
+
+.item4 { 
+    grid-area: recreation; 
+}
+.item5 { 
+    grid-area: lands; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'tourism tourism tourism'
+        'housing housing housing'
+        'recreation recreation recreation'
+        'lands lands lands';
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border: 1px solid rgb(87, 85, 85);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
