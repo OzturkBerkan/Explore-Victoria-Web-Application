@@ -1,6 +1,6 @@
 # Milestone 4
 
-This milestone had us finish the construction of our application. It has been demonstrated in the provided video <br>
+The construction of the web application is finished. 
 Our previous architecure models where updated as well <br>
 A table of which use cases were implemented in each milestone <br>
 Lastly, a software architecture was created including 3 unique views and an interface document
